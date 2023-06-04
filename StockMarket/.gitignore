@@ -1,6 +1,5 @@
 .gradle
 build/
-.src/main/resources
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
@@ -41,3 +40,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Application.properties ###
+src/main/resources/application.properties
