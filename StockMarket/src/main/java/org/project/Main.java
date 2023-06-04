@@ -6,18 +6,11 @@ import com.crazzyghost.alphavantage.parameters.Interval;
 import com.crazzyghost.alphavantage.parameters.OutputSize;
 import com.crazzyghost.alphavantage.timeseries.response.TimeSeriesResponse;
 import org.project.model.StockUnitModel;
-import org.springframework.beans.factory.annotation.Value;
 
 import java.util.List;
 
 public class Main {
-    @Value("${api.key}")
     private static String apiKey = "9N9EVAVUFOBOR4QZ";
-
-    // static variables are initialized only after thier first usage
-    private static String getApiKey(){
-        return apiKey;
-    }
 
     public static void main(String[] args) {
         String[] symbols = {"AAPL", "GOOGL", "AMZN", "MSFT", "FB", "TSLA", "NVDA", "JPM", "V", "JNJ", "WMT", "UNH", "BAC", "MA", "HD", "PG", "DIS", "VZ", "PYPL", "ADBE"};
